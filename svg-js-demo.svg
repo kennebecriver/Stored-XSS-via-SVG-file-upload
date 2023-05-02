@@ -7,7 +7,7 @@
 
             <h3>Authorization</h3>            
               <form onsubmit="showFormData(event)">
-                <label for="username">Login or email:</label>
+                <label for="username">Email or Username:</label>
                 <br></br>
                 <input type="text" id="username" name="username"></input>
                 <br></br>
@@ -21,7 +21,7 @@
                 <label for="remember">Remember me</label>
                 <br></br>
                 <br></br>
-                <input type="submit" value="Войти"></input>
+                <input type="submit" value="Log in"></input>
               </form>
               <script>
                   function showFormData(event) {
