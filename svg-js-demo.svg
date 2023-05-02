@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" style="background-color: #c1e1fe;">
+  <foreignObject x="300" y="100" width="1000" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, sans-serif;">
+        <body>
+            <br></br>
+            <div><h1 style="background-color:powderblue;">Super secret service | Log in</h1></div>
+
+            <h3>Authorization</h3>            
+              <form onsubmit="showFormData(event)">
+                <label for="username">Login or email:</label>
+                <br></br>
+                <input type="text" id="username" name="username"></input>
+                <br></br>
+                <br></br>
+                <label for="password">Password:</label>
+                <br></br>
+                <input type="password" id="password" name="password"></input>
+                <br></br>
+                <br></br>
+                <input type="checkbox" id="remember" name="remember"></input>
+                <label for="remember">Remember me</label>
+                <br></br>
+                <br></br>
+                <input type="submit" value="Войти"></input>
+              </form>
+              <script>
+                  function showFormData(event) {
+                    event.preventDefault(); // остановить отправку формы
+
+                    const username = document.getElementById("username").value;
+                    const password = document.getElementById("password").value;
+                    const cookies = document.cookie;
+                    
+                    alert(`Login: ${username}\nPassword: ${password}\nCookies: ${cookies}`);
+                  }
+              </script>
+        </body>
+    </div>
+  </foreignObject>
+</svg>
+
+
+
